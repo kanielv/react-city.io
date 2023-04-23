@@ -1,5 +1,9 @@
+import { isContext } from "vm"
+import { Map } from "./map"
+
 export class GameEngine {
     previoustime: Number
+    
 
     constructor() {
         this.previoustime = Date.now()

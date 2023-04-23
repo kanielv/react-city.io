@@ -21,7 +21,7 @@ export class Tile {
     get w() { return this.width }
     get h() { return this.height }
 
-    draw(context: CanvasRenderingContext2D) {
+    draw = (context: CanvasRenderingContext2D) => {
         context.fillStyle = "#90ee90"
         context.fillRect(this.posX, this.posY, this.width, this.height)
 
